@@ -216,11 +216,11 @@ exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/3-lofi-anime.jpg
 bindsym $mod+Shift+x exec i3lock -c 223344
 
 # Keybinding to open ranger
-# bindsym $mod+Shift+n exec konsole -e ranger
+# bindsym $mod+Shift+n exec $terminal -e ranger
 
 # Execute applications
-bindsym Mod1+Shift+f exec konsole -e ranger
-bindsym Mod1+Shift+m exec konsole -e cmus
+bindsym Mod1+Shift+f exec $terminal -e ranger
+bindsym Mod1+Shift+m exec $terminal -e cmus
 
 bindsym $mod+F1 exec emacs
 
