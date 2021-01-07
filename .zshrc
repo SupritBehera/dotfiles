@@ -153,11 +153,19 @@ source $ZSH/oh-my-zsh.sh
 # increase the number of file watchers
 alias increasewatchers="echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system"
 
+# Random color script on opening a terminal
+colorscript random
+
+
 # More aliases
 alias bashrc="vim ~/.bashrc"
+alias zshrc="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
 alias i3lock="i3lock -c 223344"
 alias cmatrix="cmatrix -C blue"
+
+# Aliases to open notes in vim
+alias manjaro-notes="vim ~/Notes/manjaro-notes"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
