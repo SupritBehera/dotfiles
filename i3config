@@ -17,7 +17,7 @@ font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -225,5 +225,14 @@ bindsym Mod1+Shift+m exec $terminal -e cmus
 bindsym $mod+F1 exec emacs
 
 # Set the qt theme to the one defined by qt5ct
-# exec --no-startup-id export QT_QPA_PLATFORMTHEME=qt5ct 
+# exec --no-startup-id export QT_QPA_PLATFORMTHEME=qt5ct
+
+client.focused 			#88c0d0 #88c0d0 #88c0d0 #88c0d0
+client.unfocused 		#3b4252 #3b4252 #3b4252 #3b4252 
+client.focused_inactive #d8dee9 #d8dee9 #888888 #292d2e
+client.urgent 			#2f343a #900000 #ffffff #900000
+
+exec_always --no-startup-id i3-msg gaps inner all set 30
+exec_always --no-startup-id i3-msg gaps outer all set 30
+for_window [class=".*"] border pixel 3
 
