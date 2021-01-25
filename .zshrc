@@ -52,6 +52,7 @@ DISABLE_UNTRACKED_FILES_DIRTY=true
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/home/suprit/.gem/ruby/2.7.0/bin
+export PATH=$PATH:/usr/bin/vscodium
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/suprit/.oh-my-zsh"
@@ -153,6 +154,7 @@ source $ZSH/oh-my-zsh.sh
 # increase the number of file watchers
 alias increasewatchers="echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system"
 
+alias code="vscodium"
 # Random color script on opening a terminal
 colorscript random
 
@@ -185,3 +187,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+source /home/suprit/.config/broot/launcher/bash/br
