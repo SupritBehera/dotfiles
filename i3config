@@ -210,7 +210,8 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # Set the wallpaper during every login
-exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/3-lofi-anime.jpg
+set $wallpaper-path ~/Pictures/wallpapers/railroad.png
+exec --no-startup-id feh --bg-scale $wallpaper-path
 
 # Keybinding for locking the screen
 bindsym $mod+Shift+x exec i3lock -c 223344
