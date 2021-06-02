@@ -164,7 +164,7 @@ alias bashrc="vim ~/.bashrc"
 alias zshrc="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
 alias i3lock="i3lock -c 223344"
-alias cmatrix="cmatrix -C blue"
+#alias cmatrix="cmatrix -C blue"
 
 # Aliases to open notes in vim
 alias manjaro-notes="vim ~/Notes/manjaro-notes"
@@ -189,3 +189,6 @@ unset __conda_setup
 
 
 source /home/suprit/.config/broot/launcher/bash/br
+# Add fzf to zsh shell
+source /usr/share/fzf/key-bindings.zsh && source /usr/share/fzf/completion.zsh
+
